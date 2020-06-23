@@ -1,12 +1,11 @@
-let spaceshipName = prompt("Qual o nome da espaçonave?")
+let nameOld = prompt("Qual o nome da pessoa mais velha?");
 
-let invertedName = ""
+let ageOld = prompt("Qual a idade da pessoa mais velha?");
 
-for (let i = spaceshipName.length - 1; i >= 0; i--) {
-  if (spaceshipName[i] == "e") {
-    break
-  }
-  invertedName += spaceshipName[i]
-}
+let nameYoung = prompt("Qual o nome da pessoa mais nova?");
 
-alert("Nome original da nave: " + spaceshipName + "\nNome após ocultação: " + invertedName)
+let ageYoung = prompt("Qual a idade da pessoa mais nova?");
+
+let ageDifference = ageOld - ageYoung;
+
+alert("A pessoa mais velha se chama " + nameOld + " e tem " + ageOld + " anos." + "\n\nA pessoa mais nova se chama " + nameYoung + " e tem " + ageYoung + " anos." + "\n\nA diferença de idade é de " + ageDifference + " anos.");
